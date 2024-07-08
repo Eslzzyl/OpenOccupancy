@@ -99,7 +99,7 @@ def main():
     if args.cfg_options is not None:
         cfg.merge_from_dict(args.cfg_options)
 
-    # import modules from plguin/xx, registry will be updated
+    # import modules from plugin/xx, registry will be updated
     if hasattr(cfg, 'plugin') and cfg.plugin:
         assert cfg.plugin_dir is not None
         import importlib
